@@ -29,10 +29,9 @@ class Database {
             ];
 
            // Percobaan 5-1 Langkah 4
-           
+             $this->conn = new PDO($dsn, $this->username, $this->password, $options);
         }
 
         return $this->conn;
     }
 }
-
